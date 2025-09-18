@@ -27,6 +27,13 @@ body {
     background-color: var(--white);
 }
 
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--stone-100);
+    }
+}
+
 .top-image {
     width: 37.5rem;
     height: 17.1rem;
@@ -39,12 +46,59 @@ body {
     object-fit: cover;
 }
 
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+    .top-image {
+        display: none;
+    }
+}
+
+.image-omelette-tablet {
+    display: none;
+}
+
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+
+    .image-container-tablet {
+        width: 53.6rem;
+        height: 30rem;
+        overflow: hidden;
+        border-radius: 1.2rem;
+    }
+    .image-omelette-tablet {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 .container {
-    height: 100vh;
     padding: 4rem 3.2rem;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+}
+
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        background-color: var(--white);
+        width: 61.6rem;
+        height: 184.4rem;
+        padding: 4rem;
+        border-radius: 2.4rem;
+        opacity: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
 }
 
 .title {
@@ -60,6 +114,13 @@ h1 {
     color: var(--stone-900);
     letter-spacing: 0%;
     line-height: 100%;
+}
+
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 .description {
@@ -185,6 +246,13 @@ hr {
     flex-direction: column;
     gap: 2.4rem;
     width: 31.1rem;
+}
+
+/* Media query for Tablets */
+@media screen and (min-width: 768px) {
+    .nutrition {
+        width: 100%;
+    }
 }
 
 .information {
